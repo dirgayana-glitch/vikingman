@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>VIKING MAN — Rahasia Pria Perkasa, Istri Makin Lengket | PROMO HARI INI</title>
+<meta name="description" content="Viking Man Herbal — formula khusus pria dewasa. Tahan lama, lebih percaya diri, hubungan makin harmonis. PROMO HARI INI + BAYAR DI TEMPAT (COD).">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{font-family:'Segoe UI',Roboto,system-ui,Arial,sans-serif;background:#0a0a0a;color:#fff;line-height:1.5;overflow-x:hidden}
+  img{max-width:100%;display:block;height:auto}
+  .wrap{max-width:540px;margin:0 auto;background:#fff;color:#111;padding-bottom:110px;box-shadow:0 0 40px rgba(0,0,0,.4)}
+
+  /* TOP BAR */
+  .topbar{background:linear-gradient(90deg,#b00000,#ff2a2a);color:#fff;text-align:center;font-weight:700;font-size:14px;padding:8px 10px;letter-spacing:.3px}
+  .topbar span{display:inline-block;animation:blink 1s infinite}
+  @keyframes blink{50%{opacity:.4}}
+
+  /* HERO */
+  .hero{background:linear-gradient(180deg,#111 0%,#1a0000 100%);color:#fff;padding:18px 16px 22px;text-align:center}
+  .hero h1{font-size:24px;line-height:1.25;font-weight:900;text-transform:uppercase;letter-spacing:.5px}
+  .hero h1 .yellow{color:#ffd400;display:block;font-size:30px;margin-top:4px;text-shadow:2px 2px 0 #b00000}
+  .hero p.sub{margin-top:10px;font-size:15px;color:#ffd9d9}
+  .badges{display:flex;justify-content:center;gap:8px;margin-top:14px;flex-wrap:wrap}
+  .badge{background:#ffd400;color:#111;font-weight:800;font-size:12px;padding:6px 10px;border-radius:20px}
+  .badge.green{background:#16c47f;color:#fff}
+  .badge.red{background:#ff2a2a;color:#fff}
+
+  .hero-img{margin:14px -16px 0}
+  .arrow{margin:10px auto 0;max-width:60px}
+
+  /* CTA BUTTON — pill style ala alatpel */
+  .cta-wrap{padding:14px 16px;text-align:center}
+  .cta{display:block;width:100%;max-width:420px;margin:0 auto;background:linear-gradient(135deg,#ff6a00,#e85a00);color:#fff;font-weight:900;font-size:clamp(17px,4.2vw,21px);padding:18px 22px;border:none;border-radius:50px;text-decoration:none;text-align:center;letter-spacing:.3px;box-shadow:0 6px 24px rgba(255,106,0,.55);cursor:pointer;animation:pulse 1.6s infinite}
+  .cta small{display:block;font-weight:600;font-size:12px;margin-top:3px;opacity:.95;text-transform:none;letter-spacing:0}
+  .cta.yellow{background:linear-gradient(135deg,#ffd400,#ff9800);color:#111;box-shadow:0 6px 24px rgba(255,180,0,.55)}
+  @keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 6px 24px rgba(255,106,0,.5)}50%{transform:scale(1.03);box-shadow:0 10px 32px rgba(255,106,0,.75)}}
+
+  /* SECTION */
+  section{padding:22px 16px;border-top:1px solid #f0f0f0}
+  h2{font-size:21px;font-weight:900;text-align:center;color:#111;margin-bottom:6px;text-transform:uppercase;line-height:1.2}
+  h2 .hl{background:#ffd400;padding:0 6px;border-radius:4px}
+  h2.red{color:#b00000}
+  .lead{text-align:center;color:#444;font-size:15px;margin-bottom:14px}
+
+  /* PROBLEM LIST */
+  .problem{background:#fff7f7}
+  .plist{list-style:none;margin-top:10px}
+  .plist li{background:#fff;border:1px solid #ffd1d1;border-left:5px solid #ff2a2a;padding:12px 14px;margin-bottom:8px;border-radius:8px;font-size:15px;color:#222}
+  .plist li::before{content:"❌ ";font-size:14px}
+
+  /* BENEFIT LIST */
+  .benefit{background:#f4fff8}
+  .blist{list-style:none;margin-top:10px}
+  .blist li{background:#fff;border:1px solid #c8efd6;border-left:5px solid #16c47f;padding:12px 14px;margin-bottom:8px;border-radius:8px;font-size:15px;color:#222}
+  .blist li::before{content:"✅ ";font-size:14px}
+
+  /* PRODUCT BOX */
+  .product-img{margin:0 -16px}
+
+  /* TESTI */
+  .testi-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+  .testi-card{border:1px solid #eee;border-radius:12px;overflow:hidden;background:#fafafa}
+  .testi-card img{width:100%}
+  .testi-card .body{padding:12px 14px}
+  .testi-card .stars{color:#ffb800;font-size:16px;letter-spacing:2px}
+  .testi-card .name{font-weight:800;font-size:14px;margin-top:6px}
+  .testi-card .loc{font-size:12px;color:#666}
+  .testi-card .quote{font-size:14px;color:#222;margin-top:6px;font-style:italic}
+
+  /* PRICE BOX */
+  .price-box{background:linear-gradient(180deg,#fff8e1,#ffe9a8);border:3px dashed #b00000;border-radius:16px;padding:18px 14px;text-align:center;margin-top:14px;position:relative}
+  .price-box .tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#b00000;color:#fff;padding:6px 14px;border-radius:20px;font-weight:800;font-size:12px;white-space:nowrap}
+  .price-box .normal{color:#666;text-decoration:line-through;font-size:18px;font-weight:600}
+  .price-box .promo{color:#b00000;font-weight:900;font-size:38px;line-height:1;margin-top:6px}
+  .price-box .save{display:inline-block;margin-top:8px;background:#16c47f;color:#fff;font-weight:800;padding:4px 12px;border-radius:20px;font-size:13px}
+  .price-box .note{margin-top:10px;font-size:13px;color:#333}
+
+  /* PAKET */
+  .paket{display:grid;grid-template-columns:1fr;gap:10px;margin-top:14px}
+  .pcard{border:2px solid #eee;border-radius:12px;padding:14px;background:#fff;position:relative}
+  .pcard.best{border-color:#b00000;background:#fff8f8}
+  .pcard .ribbon{position:absolute;top:-10px;right:10px;background:#b00000;color:#fff;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px}
+  .pcard h3{font-size:16px;font-weight:900;color:#111}
+  .pcard .price-row{display:flex;justify-content:space-between;align-items:baseline;margin-top:6px}
+  .pcard .p-now{font-size:22px;font-weight:900;color:#b00000}
+  .pcard .p-old{font-size:13px;color:#888;text-decoration:line-through}
+  .pcard .desc{font-size:13px;color:#444;margin-top:4px}
+
+  /* GARANSI */
+  .guarantee{background:#0b5a30;color:#fff;padding:22px 16px;text-align:center}
+  .guarantee h2{color:#ffd400}
+  .guarantee .gicons{display:flex;justify-content:space-around;gap:8px;margin-top:14px;flex-wrap:wrap}
+  .gicon{flex:1;min-width:90px;background:rgba(255,255,255,.08);padding:12px 8px;border-radius:10px;font-size:12px;font-weight:700}
+  .gicon .big{display:block;font-size:24px;margin-bottom:4px}
+
+  /* COUNTDOWN */
+  .urgency{background:#1a0000;color:#fff;padding:22px 16px;text-align:center}
+  .urgency h2{color:#ffd400}
+  .timer{display:flex;justify-content:center;gap:6px;margin-top:14px}
+  .tcell{background:#b00000;color:#fff;padding:10px 8px;border-radius:8px;min-width:60px;font-weight:900;font-size:22px;line-height:1}
+  .tcell small{display:block;font-size:10px;font-weight:600;margin-top:4px;opacity:.85}
+  .countdown-img{margin:14px auto 0;max-width:200px}
+  .stock{margin-top:14px;font-weight:800;color:#ffd400;font-size:14px}
+  .stock-bar{height:10px;background:rgba(255,255,255,.15);border-radius:6px;margin-top:8px;overflow:hidden}
+  .stock-bar i{display:block;height:100%;width:18%;background:linear-gradient(90deg,#ff2a2a,#ffd400);border-radius:6px}
+
+  /* FAQ */
+  .faq details{background:#fff;border:1px solid #eee;border-radius:10px;padding:12px 14px;margin-bottom:8px}
+  .faq summary{font-weight:800;cursor:pointer;font-size:15px;color:#111;list-style:none}
+  .faq summary::after{content:"+";float:right;color:#b00000;font-size:22px;line-height:1}
+  .faq details[open] summary::after{content:"−"}
+  .faq p{margin-top:8px;font-size:14px;color:#444}
+
+  /* FOOTER */
+  footer{background:#111;color:#aaa;text-align:center;padding:18px 16px;font-size:12px}
+  footer a{color:#ffd400;text-decoration:none}
+
+  /* STICKY CTA — floating button, no white bg */
+  .sticky{position:fixed;left:0;right:0;bottom:0;background:transparent;padding:10px 14px 14px;z-index:99;pointer-events:none}
+  .sticky a.cta{pointer-events:auto;display:block;width:100%;max-width:100%;margin:0;padding:15px 12px;font-size:17px;border-radius:50px;box-shadow:0 6px 22px rgba(0,0,0,.35),0 4px 14px rgba(255,106,0,.55);animation:pulse 1.6s infinite;font-weight:900;letter-spacing:.3px}
+
+  @media(min-width:541px){
+    .wrap{margin:20px auto;border-radius:14px;overflow:hidden}
+    .sticky{max-width:540px;left:50%;transform:translateX(-50%);border-radius:14px 14px 0 0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- TOP BAR -->
+  <div class="topbar"><span>🔥</span> PROMO HARI INI — DISKON 50% + GRATIS ONGKIR + BAYAR DI TEMPAT <span>🔥</span></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>STOP! ISTRI MULAI DINGIN<span class="yellow">KARENA KAMU CEPAT "SELESAI"?</span></h1>
+    <p class="sub">Ribuan pria sudah membuktikan — kini giliran kamu jadi <b>PERKASA, TAHAN LAMA, &amp; PERCAYA DIRI</b> di ranjang.</p>
+    <div class="badges">
+      <span class="badge">100% HERBAL</span>
+      <span class="badge green">BPOM ✔</span>
+      <span class="badge red">COD SE-INDONESIA</span>
+    </div>
+    <div class="hero-img">
+      <img src="https://cdn.scalev.id/uploads/1779675276/bi0Uf3H6gqJ6-giywlGDxQ/1779675276615-9253592759.webp" alt="Viking Man Banner">
+    </div>
+  </header>
+
+  <!-- CTA 1 -->
+  <div class="cta-wrap">
+    <a class="cta" href="https://chekoutsekarang.orderonline.id/vikingman" target="_blank" rel="noopener">PESAN SEKARANG — BAYAR DI RUMAH
+      <small>Klik di sini · Promo berakhir hari ini</small>
+    </a>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <h2 class="red">CIRI PRIA YANG <span class="hl">HARUS WASPADA</span></h2>
+    <p class="lead">Kalau kamu mengalami 2 dari 5 hal ini, jangan ditunda…</p>
+    <ul class="plist">
+      <li>Cepat "keluar" padahal baru beberapa menit</li>
+      <li>Mr. P kurang keras, kurang berdiri tegak</li>
+      <li>Stamina drop, mudah lelah saat berhubungan</li>
+      <li>Istri mulai pasif, jarang minta "jatah"</li>
+      <li>Hilang percaya diri, takut mengecewakan pasangan</li>
+    </ul>
+  </section>
+
+  <!-- SOLUTION / PRODUCT -->
+  <section>
+    <h2>KENALKAN — <span class="hl">VIKING MAN</span></h2>
+    <p class="lead">Formula herbal premium khusus pria dewasa. Bekerja dari dalam, hasilnya terasa di ranjang.</p>
+    <div class="product-img">
+      <img src="https://cdn.scalev.id/uploads/1779675295/kRFMtuNqi9gZiD7wS5v4Lg/1779675295381-vk.webp" alt="Viking Man Produk">
+    </div>
+    <div class="product-img" style="margin-top:10px">
+      <img src="https://cdn.scalev.id/uploads/1771953171/1SEAtb2n2lOt8gM9KEQOOw/1771953171661-7338211647782691485-large.webp" alt="Viking Man Detail">
+    </div>
+  </section>
+
+  <!-- BENEFIT -->
+  <section class="benefit">
+    <h2>YANG KAMU DAPATKAN <span class="hl">SETELAH PAKAI</span></h2>
+    <ul class="blist">
+      <li><b>Tahan lama 3–5x lipat</b> — istri puas, kamu pun bangga</li>
+      <li><b>Ereksi lebih keras &amp; berdiri tegak</b> kapan pun dibutuhkan</li>
+      <li><b>Stamina seperti usia 20-an</b>, ronde tambah tanpa loyo</li>
+      <li><b>Percaya diri kembali</b> — tidak takut "kalah" lagi</li>
+      <li><b>Hubungan rumah tangga makin harmonis</b>, istri makin lengket</li>
+    </ul>
+  </section>
+
+  <!-- CTA 2 -->
+  <div class="cta-wrap">
+    <a class="cta" href="https://chekoutsekarang.orderonline.id/vikingman" target="_blank" rel="noopener">YA, SAYA MAU COBA SEKARANG
+      <small>✓ BAYAR DI TEMPAT ✓ DIKIRIM POLOS</small>
+    </a>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <h2>BUKTI NYATA <span class="hl">DARI PELANGGAN</span></h2>
+    <p class="lead">Ribuan pria sudah merasakan hasilnya — ini sebagian kecilnya:</p>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <img src="https://cdn.scalev.id/uploads/1771955446/CO5cx0SwuugFhHnUwsRZ0Q/1771955445911-PHOTO-2026-02-24-00-29-54-2.webp" alt="Testimoni 1">
+        <div class="body">
+          <div class="stars">★★★★★</div>
+          <div class="quote">"Baru 3 hari pakai udah kerasa beda. Istri sampe nanya 'kamu minum apa?' 😄"</div>
+          <div class="name">— Bapak Andi</div>
+          <div class="loc">Bekasi, Jawa Barat</div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <img src="https://cdn.scalev.id/uploads/1771955522/pCt8qZ3MdWRtl-nY9wJ8ug/1771955522573-PHOTO-2026-02-24-00-29-55.webp" alt="Testimoni 2">
+        <div class="body">
+          <div class="stars">★★★★★</div>
+          <div class="quote">"Tahan lamanya beda jauh. Sekarang istri yang minta duluan, bukan saya lagi yang ngerayu."</div>
+          <div class="name">— Mas Rian</div>
+          <div class="loc">Surabaya, Jawa Timur</div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <img src="https://cdn.scalev.id/uploads/1771955736/-eCG9A5IH6inFrsxbZTVKA/1771955736060-PHOTO-2026-02-24-00-30-00-2.webp" alt="Testimoni 3">
+        <div class="body">
+          <div class="stars">★★★★★</div>
+          <div class="quote">"Udah coba macem-macem, baru Viking Man yang hasilnya nyata. Recommended buat para suami!"</div>
+          <div class="name">— Pak Bambang</div>
+          <div class="loc">Medan, Sumatera Utara</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE / OFFER -->
+  <section id="order" style="background:#fff8e1">
+    <h2 class="red">HARGA PROMO <span class="hl">HARI INI SAJA</span></h2>
+    <p class="lead">Stok terbatas — promo bisa berakhir kapan saja tanpa pemberitahuan.</p>
+
+    <div class="price-box">
+      <span class="tag">🔥 HEMAT 70% HARI INI</span>
+      <div class="normal">Harga Normal Rp 600.000</div>
+      <div class="promo">Rp 175.000</div>
+      <span class="save">HEMAT Rp 425.000</span>
+      <div class="note">✓ BAYAR DI TEMPAT (COD) &nbsp; ✓ Dikirim Polos</div>
+    </div>
+
+    <div class="cta-wrap" style="padding-left:0;padding-right:0;margin-top:14px">
+      <a class="cta" href="https://chekoutsekarang.orderonline.id/vikingman" target="_blank" rel="noopener">PESAN SEKARANG — BAYAR DI TEMPAT
+        <small>Isi form di bawah · Barang diantar · Bayar saat barang sampai</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="guarantee">
+    <h2>100% AMAN — <span style="color:#fff">GARANSI RESMI</span></h2>
+    <div class="gicons">
+      <div class="gicon"><span class="big">💰</span>Bayar di Tempat</div>
+      <div class="gicon"><span class="big">📦</span>Dikirim Polos</div>
+      <div class="gicon"><span class="big">🌿</span>100% Herbal</div>
+      <div class="gicon"><span class="big">✔️</span>BPOM Resmi</div>
+    </div>
+    <p style="margin-top:14px;font-size:13px;opacity:.9">Kamu baru bayar saat paket sampai di tangan. Tidak puas? Hubungi CS kami — pelayanan ramah, respon cepat.</p>
+  </section>
+
+  <!-- URGENCY -->
+  <section class="urgency">
+    <h2>PROMO BERAKHIR DALAM:</h2>
+    <div class="timer">
+      <div class="tcell" id="th">00<small>JAM</small></div>
+      <div class="tcell" id="tm">00<small>MENIT</small></div>
+      <div class="tcell" id="ts">00<small>DETIK</small></div>
+    </div>
+    <div class="stock">⚠️ STOK TERSISA HANYA 17 BOTOL HARI INI</div>
+    <div class="stock-bar"><i></i></div>
+    <p style="margin-top:12px;font-size:13px;opacity:.9">Setelah stok habis, harga kembali normal Rp 600.000</p>
+  </section>
+
+  <!-- ORDER FORM (OrderOnline embed) -->
+  <section id="form" style="background:#fff">
+    <h2>FORM PEMESANAN <span class="hl">COD</span></h2>
+    <p class="lead">Isi data di bawah, CS akan konfirmasi pesanan kamu.</p>
+
+    <!-- OrderOnline Embed Code - v8.0.2 -->
+    <div class="ooef">
+      <form class="orderonline-embed-form"
+        data-username="chekoutsekarang"
+        data-product-slug="vikingman"
+        data-product-id="6a1db5e72d408d4372024bb2"
+        id="oo-embed-form-vikingman-112"
+        data-origin="orderonline">
+        <div class="ooef-loader">
+          <style>.ooef-loader{visibility:hidden;opacity:0;position:absolute;left:0;right:0;top:0;bottom:0;display:flex;justify-content:center;align-items:center;flex-direction:column;animation:ooLoadingIn 10s ease;-webkit-animation:ooLoadingIn 10s ease;animation-fill-mode:forwards;overflow:hidden}@keyframes ooLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}@-webkit-keyframes ooLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}.ooef-loader>div,.ooef-loader>div:after{border-radius:50%;width:2.5rem;height:2.5rem}.ooef-loader>div{font-size:10px;position:relative;text-indent:-9999em;border:.25rem solid #f5f5f5;border-left:.25rem solid #55c4cf;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:ooLoading 1.1s infinite linear;animation:ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left:.25rem solid #ff4500;animation-duration:5s}@-webkit-keyframes ooLoading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}</style>
+          <div aria-live="polite" role="status"><div>Loading...</div></div>
+        </div>
+      </form>
+    </div>
+    <script>
+      if (typeof xLogError != 'function') {
+        var xLogError = function (error) {
+          var req = new XMLHttpRequest();
+          var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+          var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+          req.open('POST', 'https://api.orderonline.id/log', true);
+          req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+          req.send(params);
+        };
+      }
+      try {
+        if (typeof xEmbedScript != 'function') {
+          var xEmbedScript = function () {
+            !function(w, d, e, v, id, t, s) {
+              if (d.getElementById(id)) return;
+              t = d.createElement(e); t.async = !0; t.src = v; t.id = id;
+              s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+            }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js');
+          };
+        }
+        if (typeof xEmbedInit != 'function') {
+          var xEmbedInit = function (w, n) {
+            if (w.ooe) return;
+            n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+            if (!w._ooe) w._ooe = n;
+            n.push = n; n.loaded = !0; n.version = '8.0.2'; n.queue = [];
+          };
+        }
+        xEmbedInit(window);
+        ooe('setup', 'redirect', 'https://chekoutsekarang.orderonline.id');
+        ooe('init', '6a191c42f9c9ed111706aecc', '6a1db5e72d408d4372024bb2', '6a1db6b6dad9d1164d0988dd', 'oo-embed-form-vikingman-112', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+        if (!window.jQuery) {
+          !function(w, d, e, v, id, t, s) {
+            if (d.getElementById(id)) return;
+            t = d.createElement(e); t.async = !0; t.src = v; t.id = id;
+            t.addEventListener('load', xEmbedScript);
+            s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+          }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+        } else {
+          xEmbedScript();
+        }
+      } catch (e) { xLogError(e); throw e; }
+    </script>
+    <!-- End OrderOnline Embed Code -->
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" style="background:#fafafa">
+    <h2>PERTANYAAN <span class="hl">YANG SERING DITANYAKAN</span></h2>
+    <details open><summary>Apakah benar-benar bayar di tempat (COD)?</summary><p>Benar 100%. Kamu hanya membayar saat paket sudah sampai di alamat. Tidak perlu transfer di awal.</p></details>
+    <details><summary>Berapa lama hasilnya terasa?</summary><p>Sebagian besar pelanggan merasakan perubahan dalam 3–7 hari pemakaian rutin sesuai aturan pakai.</p></details>
+    <details><summary>Apakah ada efek samping?</summary><p>Viking Man 100% herbal, sudah terdaftar BPOM, aman dikonsumsi sesuai dosis anjuran.</p></details>
+    <details><summary>Apakah pengiriman dirahasiakan?</summary><p>Ya, paket dikirim polos tanpa label produk. Aman dari sorotan tetangga atau kurir.</p></details>
+    <details><summary>Berapa lama pengiriman sampai?</summary><p>Estimasi 1–3 hari kerja untuk pulau Jawa, 2–5 hari kerja untuk luar Jawa.</p></details>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="background:#1a0000;color:#fff;text-align:center">
+    <h2 style="color:#ffd400">JANGAN TUNGGU ISTRI <span class="hl">SELINGKUH KARENA KECEWA</span></h2>
+    <p style="margin-top:10px;font-size:15px;color:#ffd9d9">Hari ini adalah hari yang tepat untuk berubah. Ambil keputusan sekarang — masa depan rumah tangga kamu yang akan berterima kasih.</p>
+    <img src="https://cdn.scalev.id/uploads/1771953394/iaJQNCvLeusltQMArqPRTw/1771953394571-1311.webp" alt="Viking Man Final" style="margin:14px 0">
+    <a class="cta" href="https://chekoutsekarang.orderonline.id/vikingman" target="_blank" rel="noopener" style="display:inline-block;width:100%">PESAN SEKARANG — BAYAR DI TEMPAT
+      <small>Promo berakhir hari ini · Stok terbatas</small>
+    </a>
+  </section>
+
+  <!-- CONTACT -->
+  <section style="padding:0">
+    <img src="https://cdn.scalev.id/uploads/1771953480/y0wYEQouYTZTI4b-kb69rQ/1771953479877-Contact-Us-(1).webp" alt="Hubungi Kami">
+  </section>
+
+  <footer>
+    © 2026 Viking Man Official · CS aktif 24 jam<br>
+    <a href="#order">Kembali ke Promo ↑</a>
+  </footer>
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky">
+  <a class="cta" href="https://chekoutsekarang.orderonline.id/vikingman" target="_blank" rel="noopener">🛒 AMBIL PROMO SEKARANG</a>
+</div>
+
+<script>
+  // Countdown — reset tiap 24 jam
+  (function(){
+    var end = new Date();
+    end.setHours(23,59,59,0);
+    function tick(){
+      var now = new Date();
+      var d = Math.max(0, end - now);
+      var h = Math.floor(d/3600000);
+      var m = Math.floor((d%3600000)/60000);
+      var s = Math.floor((d%60000)/1000);
+      document.getElementById('th').firstChild.nodeValue = (h<10?'0':'')+h;
+      document.getElementById('tm').firstChild.nodeValue = (m<10?'0':'')+m;
+      document.getElementById('ts').firstChild.nodeValue = (s<10?'0':'')+s;
+    }
+    tick(); setInterval(tick,1000);
+  })();
+
+</script>
+</body>
+</html>
