@@ -116,6 +116,27 @@
   footer{background:#111;color:#aaa;text-align:center;padding:18px 16px;font-size:12px}
   footer a{color:#ffd400;text-decoration:none}
 
+  /* RATING BAR */
+  .rating{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:10px;font-size:13px;color:#ffd9d9}
+  .rating .big{color:#ffd400;font-weight:900;font-size:16px}
+  .rating .star{color:#ffb800;letter-spacing:2px}
+
+  /* BONUS STACK */
+  .bonus{background:linear-gradient(135deg,#fff8e1,#ffe9a8);border:2px dashed #b00000;border-radius:14px;padding:14px;margin-top:14px}
+  .bonus h3{text-align:center;color:#b00000;font-weight:900;font-size:16px;margin-bottom:10px;text-transform:uppercase}
+  .bonus ul{list-style:none}
+  .bonus li{background:#fff;border-radius:8px;padding:10px 12px;margin-bottom:6px;font-size:13px;color:#222;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .bonus li b{color:#b00000;white-space:nowrap}
+  .bonus .total{background:#16c47f;color:#fff;text-align:center;font-weight:900;padding:10px;border-radius:8px;margin-top:8px;font-size:15px}
+
+  /* LIVE NOTIF */
+  .live-notif{position:fixed;left:10px;bottom:90px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 8px 28px rgba(0,0,0,.25);z-index:98;font-size:12px;max-width:280px;display:flex;gap:10px;align-items:center;transform:translateX(-120%);transition:transform .5s ease;border-left:4px solid #16c47f}
+  .live-notif.show{transform:translateX(0)}
+  .live-notif .dot{width:10px;height:10px;background:#16c47f;border-radius:50%;flex-shrink:0;animation:blink 1s infinite}
+  .live-notif .txt{line-height:1.3;color:#222}
+  .live-notif .txt b{color:#111}
+  .live-notif .txt .when{display:block;color:#888;font-size:11px;margin-top:2px}
+
   /* STICKY CTA — floating button, no white bg */
   .sticky{position:fixed;left:0;right:0;bottom:0;background:transparent;padding:10px 14px 14px;z-index:99;pointer-events:none}
   .sticky a.cta{pointer-events:auto;display:block;width:100%;max-width:100%;margin:0;padding:15px 12px;font-size:17px;border-radius:50px;box-shadow:0 6px 22px rgba(0,0,0,.35),0 4px 14px rgba(255,106,0,.55);animation:pulse 1.6s infinite;font-weight:900;letter-spacing:.3px}
@@ -141,6 +162,11 @@
       <span class="badge green">BPOM ✔</span>
       <span class="badge red">COD SE-INDONESIA</span>
     </div>
+    <div class="rating">
+      <span class="star">★★★★★</span>
+      <span class="big">4.9/5</span>
+      <span>· 2.341 review · 7.842+ pelanggan</span>
+    </div>
     <div class="hero-img">
       <img src="https://cdn.scalev.id/uploads/1779675276/bi0Uf3H6gqJ6-giywlGDxQ/1779675276615-9253592759.webp" alt="Viking Man Banner">
     </div>
@@ -148,8 +174,8 @@
 
   <!-- CTA 1 -->
   <div class="cta-wrap">
-    <a class="cta" href="#form">PESAN SEKARANG — BAYAR DI RUMAH
-      <small>Klik di sini · Promo berakhir hari ini</small>
+    <a class="cta" href="#form">SAYA MAU JADI PERKASA SEKARANG
+      <small>✓ Bayar di Rumah · ✓ Garansi Uang Kembali</small>
     </a>
   </div>
 
@@ -245,23 +271,34 @@
       <div class="note">✓ BAYAR DI TEMPAT (COD) &nbsp; ✓ Dikirim Polos</div>
     </div>
 
+    <div class="bonus">
+      <h3>🎁 BONUS GRATIS HARI INI</h3>
+      <ul>
+        <li><span>📘 eBook "Rahasia Suami Perkasa"</span><b>Rp 150.000</b></li>
+        <li><span>💬 Konsultasi Pribadi via WhatsApp</span><b>Rp 200.000</b></li>
+        <li><span>🎯 Panduan Pemakaian Maksimal</span><b>Rp 100.000</b></li>
+      </ul>
+      <div class="total">TOTAL BONUS SENILAI Rp 450.000 — GRATIS!</div>
+    </div>
+
     <div class="cta-wrap" style="padding-left:0;padding-right:0;margin-top:14px">
-      <a class="cta" href="#form">PESAN SEKARANG — BAYAR DI TEMPAT
-        <small>Isi form di bawah · Barang diantar · Bayar saat barang sampai</small>
+      <a class="cta" href="#form">YA, SAYA MAU PERKASA SEKARANG
+        <small>Bayar saat barang sampai · Tidak puas? Uang kembali 100%</small>
       </a>
     </div>
   </section>
 
   <!-- GUARANTEE -->
   <section class="guarantee">
-    <h2>100% AMAN — <span style="color:#fff">GARANSI RESMI</span></h2>
+    <h2>GARANSI <span style="color:#fff">UANG KEMBALI 100%</span></h2>
+    <p style="margin-top:8px;font-size:15px;font-weight:700">Pakai selama 14 hari — tidak ada hasil? UANG KAMU KAMI KEMBALIKAN. Tanpa syarat ribet.</p>
     <div class="gicons">
       <div class="gicon"><span class="big">💰</span>Bayar di Tempat</div>
       <div class="gicon"><span class="big">📦</span>Dikirim Polos</div>
       <div class="gicon"><span class="big">🌿</span>100% Herbal</div>
       <div class="gicon"><span class="big">✔️</span>BPOM Resmi</div>
     </div>
-    <p style="margin-top:14px;font-size:13px;opacity:.9">Kamu baru bayar saat paket sampai di tangan. Tidak puas? Hubungi CS kami — pelayanan ramah, respon cepat.</p>
+    <p style="margin-top:14px;font-size:13px;opacity:.9">Resiko 100% ada di pihak kami. Kamu cukup duduk manis, paket diantar, bayar di tempat, dan rasakan hasilnya sendiri.</p>
   </section>
 
   <!-- URGENCY -->
@@ -358,8 +395,8 @@
     <h2 style="color:#ffd400">JANGAN TUNGGU ISTRI <span class="hl" style="color:#111">SELINGKUH KARENA KECEWA</span></h2>
     <p style="margin-top:10px;font-size:15px;color:#ffd9d9">Hari ini adalah hari yang tepat untuk berubah. Ambil keputusan sekarang — masa depan rumah tangga kamu yang akan berterima kasih.</p>
     <img src="https://cdn.scalev.id/uploads/1771953394/iaJQNCvLeusltQMArqPRTw/1771953394571-1311.webp" alt="Viking Man Final" style="margin:14px 0">
-    <a class="cta" href="#form" style="display:inline-block;width:100%">PESAN SEKARANG — BAYAR DI TEMPAT
-      <small>Promo berakhir hari ini · Stok terbatas</small>
+    <a class="cta" href="#form" style="display:inline-block;width:100%">YA, SAYA SIAP BERUBAH HARI INI!
+      <small>Bayar di tempat · Garansi uang kembali · Stok terbatas</small>
     </a>
   </section>
 
@@ -367,6 +404,16 @@
     © 2026 Viking Man Official · CS aktif 24 jam<br>
     <a href="#order">Kembali ke Promo ↑</a>
   </footer>
+</div>
+
+<!-- LIVE ORDER NOTIF -->
+<div class="live-notif" id="liveNotif">
+  <div class="dot"></div>
+  <div class="txt">
+    <b id="notifName">—</b> baru saja memesan<br>
+    <span id="notifProduct">Viking Man</span>
+    <span class="when" id="notifWhen">beberapa detik lalu</span>
+  </div>
 </div>
 
 <!-- STICKY CTA -->
@@ -392,6 +439,29 @@
     tick(); setInterval(tick,1000);
   })();
 
+  // Live order notification — fake but powerful FOMO
+  (function(){
+    var names = [
+      "Bapak Andi (Jakarta)","Mas Rian (Surabaya)","Pak Bambang (Medan)",
+      "Bapak Hendra (Bandung)","Mas Doni (Semarang)","Pak Yusuf (Palembang)",
+      "Bapak Wawan (Bekasi)","Mas Fajar (Makassar)","Pak Iwan (Yogyakarta)",
+      "Bapak Rudi (Denpasar)","Mas Arif (Tangerang)","Pak Slamet (Solo)",
+      "Bapak Hadi (Malang)","Mas Eko (Pekanbaru)","Pak Joko (Balikpapan)"
+    ];
+    var produks = ["1 Botol Viking Man","2 Botol Viking Man","3 Botol Viking Man"];
+    var whens = ["beberapa detik lalu","1 menit lalu","2 menit lalu","3 menit lalu","5 menit lalu"];
+    var el = document.getElementById('liveNotif');
+    var idx = 0;
+    function show(){
+      document.getElementById('notifName').textContent = names[Math.floor(Math.random()*names.length)];
+      document.getElementById('notifProduct').textContent = produks[Math.floor(Math.random()*produks.length)];
+      document.getElementById('notifWhen').textContent = whens[Math.floor(Math.random()*whens.length)];
+      el.classList.add('show');
+      setTimeout(function(){ el.classList.remove('show'); }, 5000);
+      setTimeout(show, 9000 + Math.random()*12000);
+    }
+    setTimeout(show, 4000);
+  })();
 </script>
 </body>
 </html>
