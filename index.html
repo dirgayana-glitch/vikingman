@@ -121,6 +121,16 @@
   .rating .big{color:#ffd400;font-weight:900;font-size:16px}
   .rating .star{color:#ffb800;letter-spacing:2px}
 
+  /* RECENT ORDERS FEED */
+  .feed{background:#f7fff9}
+  .feed-list{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+  .feed-item{background:#fff;border:1px solid #e2efe6;border-left:4px solid #16c47f;border-radius:10px;padding:10px 12px;display:flex;gap:10px;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+  .feed-item .fdot{width:10px;height:10px;background:#16c47f;border-radius:50%;flex-shrink:0;animation:blink 1.2s infinite}
+  .feed-item .ftxt{font-size:13px;line-height:1.35;color:#222;flex:1}
+  .feed-item .ftxt b{color:#111}
+  .feed-item .ftxt .fwhen{display:block;color:#888;font-size:11px;margin-top:2px}
+  .feed-more{text-align:center;color:#16c47f;font-weight:800;font-size:12px;margin-top:10px}
+
   /* LIVE NOTIF */
   .live-notif{position:fixed;left:10px;bottom:90px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 8px 28px rgba(0,0,0,.25);z-index:98;font-size:12px;max-width:280px;display:flex;gap:10px;align-items:center;transform:translateX(-120%);transition:transform .5s ease;border-left:4px solid #16c47f}
   .live-notif.show{transform:translateX(0)}
@@ -248,6 +258,20 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- RECENT ORDERS FEED -->
+  <section class="feed">
+    <h2>🔥 PESANAN <span class="hl">TERBARU</span></h2>
+    <p class="lead">Lihat para pria yang sudah ambil keputusan tepat hari ini:</p>
+    <div class="feed-list" id="feedList">
+      <div class="feed-item"><div class="fdot"></div><div class="ftxt"><b>Bapak Andi (Jakarta)</b> baru saja memesan<br>2 Botol Viking Man <span class="fwhen">1 menit lalu</span></div></div>
+      <div class="feed-item"><div class="fdot"></div><div class="ftxt"><b>Mas Rian (Surabaya)</b> baru saja memesan<br>1 Botol Viking Man <span class="fwhen">3 menit lalu</span></div></div>
+      <div class="feed-item"><div class="fdot"></div><div class="ftxt"><b>Pak Bambang (Medan)</b> baru saja memesan<br>3 Botol Viking Man <span class="fwhen">5 menit lalu</span></div></div>
+      <div class="feed-item"><div class="fdot"></div><div class="ftxt"><b>Bapak Hendra (Bandung)</b> baru saja memesan<br>2 Botol Viking Man <span class="fwhen">7 menit lalu</span></div></div>
+      <div class="feed-item"><div class="fdot"></div><div class="ftxt"><b>Mas Doni (Semarang)</b> baru saja memesan<br>1 Botol Viking Man <span class="fwhen">9 menit lalu</span></div></div>
+    </div>
+    <div class="feed-more">+ 247 pesanan masuk dalam 24 jam terakhir</div>
   </section>
 
   <!-- PRICE / OFFER -->
